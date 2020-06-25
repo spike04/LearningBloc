@@ -11,6 +11,7 @@ Here we are using the BLoC Package created By Felix Angelov along with the requi
 Along with BLoC, the project uses [Freezed](https://pub.dev/packages/freezed) Package By Remi Rousselet, creator of Famous [Provider](https://pub.dev/packages/provider) Package.
 
 ### Example Listings
-- &check; BLoc with Freezed 
-- _ BLoC with Freezed and StateNotifier
-- ...
+
+- &check; BLoc with Freezed
+- \_ BLoC with Freezed and StateNotifier
+- BLoC with Freezed for API Call ([Dio](https://pub.dev/packages/dio))

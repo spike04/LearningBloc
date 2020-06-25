@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_state_notifier/flutter_state_notifier.dart';
 
-import 'blocs/counter/counter_bloc.dart';
-import 'pages/CounterPage.dart';
+import 'notifiers/CounterStateNotifier.dart';
+import 'pages/CounterAsyncPage.dart';
+import 'state/RemoteState.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,9 +18,13 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: BlocProvider<CounterBloc>(
-        create: (context) => CounterBloc(),
-        child: CounterPage(),
+      // home: BlocProvider<CounterBloc>(
+      //   create: (context) => CounterBloc(),
+      //   child: CounterPage(),
+      // ),
+      home: StateNotifierProvider<CounterStateNotifier, RemoteState<int>>.value(
+        value: CounterStateNotifier(),
+        child: CounterAsyncPage(),
       ),
     );
   }
