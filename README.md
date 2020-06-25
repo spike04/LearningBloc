@@ -10,7 +10,9 @@ Here we are using the BLoC Package created By Felix Angelov along with the requi
 
 Along with BLoC, the project uses [Freezed](https://pub.dev/packages/freezed) Package By Remi Rousselet, creator of Famous [Provider](https://pub.dev/packages/provider) Package.
 
+Added State Notifier to perform Same operation but flexibility Seems to be an issue with StateNotifier if we are to use it like that of bloc.
+
 ### Example Listings
 - &check; BLoc with Freezed 
-- _ BLoC with Freezed and StateNotifier
+- _ BLoC with Freezed and [StateNotifier](https://pub.dev/packages/state_notifier)
 - ...
